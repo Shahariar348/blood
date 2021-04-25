@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.headers{
+   display: flex;
+   height: 12vh;
+   align-items: center;
+   color: white;
+   background-image: linear-gradient(to left,rgb(15, 191, 214),rgb(15, 214, 171));
+}
+.logos{
+    flex: 1;
+ 
+}
+.logos h3{
+  margin-top: 18px;
+  font-size: xx-large;
+}
+.logos{
+    display: flex;
+}
+.navber{
+    flex: 2;
+
+}
+.navber nav ul {
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+}
+
+.navber nav ul li a {
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    font-size: 19px;
+    color: white;
+    font-weight:500;
+    cursor: pointer;
+
+    
+ }
+ 
+.navber nav ul li :hover {
+     padding: 5px;
+     border-radius: 8px;
+     background-image:linear-gradient(to right,rgba(4, 192, 76, 0.562),rgba(39, 202, 243, 0.562))
+}
+.logos img{
+    width: 50px;
+    margin-top: 0px;
+    margin-left: 50px;
+  
+}
+.presentation{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+.content{
+   flex: 1;
+   
+}
+.content-item{
+   margin-left: 50px;
+
+}
+.content-item h2{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 32px;
+
+    color: rgb(7, 197, 255);
+
+}
+.content-item p{
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-family:serif;
+    font-weight:lighter;
+    color: rgba(252, 87, 11, 0.87);
+}
+.btn{
+ width: 300px;
+ height: 10px;
+ text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  border: 1px solid green;
+  transition-duration: 5s;
+  padding: 10px;
+  color: #f2f2f2;
+  background-image: linear-gradient(to left,rgb(15, 191, 214),rgb(15, 214, 171));
+  cursor: pointer;
+}
+.btn:hover{
+    background-image: linear-gradient(to right,rgb(15, 191, 214),rgb(15, 214, 171));
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    margin-left: 100px;
+}
+
+.down{
+   
+    width: 11px;
+    height: 50px;
+    position: absolute;
+    top: 75%;
+    transform: rotate(270deg );
+}
+.content-images{
+    flex: 1;
+}
+
+.content-image{
+ height: 80vh;
+ transition-duration: 1s;
+}
+.content-image:hover{
+    height: 90vh;
+    transition-duration: 1s;
+}
+.documents{
+    display: flex;
+    justify-content: center;
+}
+.document-image{
+   flex: 1;
+
+}
+.document-image img{
+    min-height: 60vh;
+    transition-duration: 1s;
+}
+.document-image img:hover{
+    min-height: 70vh;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.document-doc1{
+    flex: 1;
+    box-shadow: black;
+    margin-left: 20px;
+}
+.document-doc1 h3{
+  font-size: 22px;
+  color: rgba(255, 0, 0, 0.336);
+  margin-bottom: 10px;
+}
+.document-doc1 h6{
+    color: rgba(137, 43, 226, 0.356);
+    margin-bottom: 10px;
+  }
+  .document-doc1 p{
+    text-align: justify;
+  }
+
+  .document-doc2{
+    flex: 1;
+    box-shadow: black;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.document-doc2 h3{
+  font-size: 22px;
+  color: rgba(255, 0, 0, 0.336);
+  margin-bottom: 10px;
+}
+.document-doc2 h6{
+    color: rgba(137, 43, 226, 0.356);
+    margin-bottom: 10px;
+  }
+  .document-doc2 p{
+    text-align: justify;
+    
+  }
+  .document-doc2 p a,.document-doc1 p a{
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .tables{
+      margin-top: 50px;
+  }
+  .table{
+      margin-top: 10px;
+      
+  }
+
+
+  table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .table td, table th {
+  
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .table tr:hover {background-color: rgb(170, 224, 19);}
+  
+  .table th {
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-image: linear-gradient(to left,rgb(15, 191, 214),rgb(15, 214, 171));
+    color: white;
+  }
+
+.footer{
+    height: 8vh;
+    margin-top: 90px;
+    text-align: center;
+    background-image: linear-gradient(to left,rgb(15, 191, 214),rgb(15, 214, 171));
+}

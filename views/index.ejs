@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>
+           <%= tital %>
+        </title>
+    
+    </head>
+   
+      <body> 
+               <div class="div1">
+                   <h3>Pakistan girl phone nambar <%= new Date() %></h3>
+                   <a href="/user/users"> Show all User</a>
+                  
+
+               </div>
+                
+              <p>
+                Search Premium Number, Information from Trusted Internet Sources. Find All Info You Want. 
+                Quick Answers. Useful & Relevant. Explore the Best Info Now.<br> 100+ Unique Results. 
+                Find in Seconds. Services: Secure Search, No.1 Answers, Trusted Results, 99% Match
+              </p>
+              <style>
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+
+              input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              input[type=text]:hover{
+                border: 1px solid rgba(10, 207, 59, 0.801);
+              }
+              
+              .btn{
+                width: 100%;
+                padding: 12px 20px;
+                margin-top: 20px;
+               display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                font-size: 22px;
+                font-weight: bold;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                background-color: #45a049;
+              }
+              
+              .btn:hover {
+                border: 1px solid rgb(8, 8, 8);
+              }
+              .hd{
+                  margin-left:350px;
+              }
+             .div1 {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+              }
+              .div2 {
+                width:600px;
+                height: 300px;
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+              }
+              </style>
+              <div class="hd">
+
+           
+              <div class='div2'>
+
+                <form action='/user/users' method="POST">
+
+                <label>Username</label>
+                <input type="text" name ="name"placeholder="Username" maxlength="20" >
+                <br>
+                <label>Email</label>
+                <input type="text" name ="email" placeholder="Email" >
+                <br>
+                <label>Phone</label>
+                <input type="text" name ="phone" placeholder="Phone"  minlength="10" >
+                <br>
+                <button class="btn" type="Submit">Submit</button
+                
+                  </form>
+
+              </div>
+
+            </div>
+              
+
+
+      </body>
+
+</html>

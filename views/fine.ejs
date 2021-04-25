@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>
+           <%= tital %>
+        </title>
+    
+    </head>
+   
+      <body> 
+               <div>
+                   <h3>Pakistan girl phone nambar <%= new Date() %></h3>
+                   <a class="li0"  href="/user/creatuser">Creat new user </a>
+               </div>
+                
+              <p>
+                Search Premium Number, Information from Trusted Internet Sources. Find All Info You Want. 
+                Quick Answers. Useful & Relevant. Explore the Best Info Now.<br> 100+ Unique Results. 
+                Find in Seconds. Services: Secure Search, No.1 Answers, Trusted Results, 99% Match
+              </p>
+
+
+<style>
+ .li0:link, .li0:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.li0:hover, .li0:active {
+  background-color: red;
+}
+
+.li02{
+  color: red;
+  margin-right: 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+ 
+}
+.li03{
+  margin-right: 20px;
+  text-align: center;
+  color: rgb(31, 200, 230);
+  display: inline-block;
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+}
+            table{
+                width: 100%;
+               
+                }
+                table,td{
+                  background-color: rgba(7, 7, 7, 0.863);
+                  border: 1px solid rgb(31, 200, 230) ;
+                  padding:  10px 10px;
+                  text-align: center;
+                               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                               font-size: 16px;
+                               font-weight: bold;  
+                               color: rgb(31, 200, 230);
+                                }
+
+                                
+
+                
+                table, th {
+                  padding-bottom: 10px;
+                  border: 2px solid rgb(31, 200, 230);
+                  background-color: rgba(7, 7, 7, 0.863);
+                  text-align: center;
+                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                  font-size: 20px; 
+                  font-weight: bolder;
+                  
+                  color: rgb(231, 95, 16);  
+                                }
+                
+                table {
+                  width: 100%;
+                  border-collapse: collapse;
+                }
+                </style>
+
+              <table>
+                <tr id="col">
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Email</th> 
+                    <th>Phone</th>
+                    <th>Database id</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                   
+                  </tr>
+                 
+                  
+                  <% for(let u of c) { %> 
+                    
+                       
+                <tr id ="2ndcol">
+                     
+                    <td> <%= num++ %>  </td>
+                    <td><%= u.name %> </td>
+                    <td><%= u.email %> </td>
+                    <td><%= u.phone %> </td>
+                    <td><%= u.id %></td> 
+                    <td><a class="li02" href="/user/delete/<%= u.id%>">Delete</a></td>
+                    <td><a class="li03"  href="/user/update/<%= u.id%>">Update</a></td> 
+                  </tr>
+               
+                <% } %> 
+
+                  
+            </table>
+            
+        
+
+           
+        
+
+
+
+      </body>
+
+</html>

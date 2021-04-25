@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>
+           <%= tital %>
+        </title>
+    
+    </head>
+   
+      <body> 
+               <div class="div1">
+                   <h3>Pakistan girl phone nambar <%= new Date() %></h3>
+                   <a href="/user/users"> Show all User</a>
+                   <a class="li0"  href="/user/creatuser">Creat new user </a>
+                  
+
+               </div>
+                
+              <p>
+                Search Premium Number, Information from Trusted Internet Sources. Find All Info You Want. 
+                Quick Answers. Useful & Relevant. Explore the Best Info Now.<br> 100+ Unique Results. 
+                Find in Seconds. Services: Secure Search, No.1 Answers, Trusted Results, 99% Match
+              </p>
+              <style>
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+.li0:link, .li0:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.li0:hover, .li0:active {
+  background-color: red;
+}
+
+              input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              input[type=text]:hover{
+                border: 1px solid rgba(10, 207, 59, 0.801);
+              }
+              
+              .btn{
+                width: 100%;
+                padding: 12px 20px;
+                margin-top: 20px;
+               display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                font-size: 22px;
+                font-weight: bold;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                background-color: #45a049;
+              }
+              
+              .btn:hover {
+                border: 1px solid rgb(8, 8, 8);
+              }
+              .hd{
+                  margin-left:350px;
+              }
+             .div1 {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+              }
+              .div2 {
+                width:600px;
+                height: 300px;
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+              }
+              </style>
+              <div class="hd">
+
+           
+              <div class='div2'>
+
+                <form action='/user/update/<%= c._id %>' method="POST">
+                <label>Name</label>
+                <input type="text" value="<%= c.name %>" name ="name"placeholder="Username" required>
+                <br>
+                <label>Email</label>
+                <input type="text" value="<%= c.email %>" name ="email" placeholder="Email" required>
+                <br>
+                <label>Phone</label>
+                <input type="text" value="<%= c.phone %>" name ="phone" placeholder="Phone" required>
+                <br>
+                <img src="<%= c.img.nm %> " width="100px" height="100px" alt="nai">
+                <button class="btn" type="submit">Update</button>
+                
+                
+                </form>
+
+              </div>
+
+            </div>
+              
+
+
+      </body>
+
+</html>
